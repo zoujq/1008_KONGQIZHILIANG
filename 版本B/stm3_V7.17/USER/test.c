@@ -84,11 +84,11 @@ int main(void)
 	init_system_printf();
 	printf("zoujq-V2.0.2\n\r");
 
-    Thread_Start(User_Key_Scan_Thread, &threadInfo.status);
-    Thread_Start(User_Menu_Show_Thread, &threadInfo.status);
-    Thread_Start(User_All_Sensor_Thread, &threadInfo.status);
+//    Thread_Start(User_Key_Scan_Thread, &threadInfo.status);
+//    Thread_Start(User_Menu_Show_Thread, &threadInfo.status);
+//    Thread_Start(User_All_Sensor_Thread, &threadInfo.status);
 //    Thread_Start(User_WIFI_Thread, &threadInfo.status);
-    Thread_Start(User_SI4432_Thread, &threadInfo.status);
+//    Thread_Start(User_SI4432_Thread, &threadInfo.status);
 
 
 
@@ -109,16 +109,16 @@ int main(void)
 
 
 
-    Thread_Start(Charge_Off_Show_Thread, &threadInfo.status);
-    Thread_Start(All_Show_Thread, &threadInfo.status);
-    Thread_Start(PM25_Show_Thread, &threadInfo.status);
-		Thread_Start(TVOC_Show_Thread, &threadInfo.status);
-    Thread_Start(HCHO_Show_Thread, &threadInfo.status);
-    Thread_Start(CO2_Show_Thread, &threadInfo.status);
-    Thread_Start(Time_Show_Thread, &threadInfo.status);
+//    Thread_Start(Charge_Off_Show_Thread, &threadInfo.status);
+//    Thread_Start(All_Show_Thread, &threadInfo.status);
+//    Thread_Start(PM25_Show_Thread, &threadInfo.status);
+//		Thread_Start(TVOC_Show_Thread, &threadInfo.status);
+//    Thread_Start(HCHO_Show_Thread, &threadInfo.status);
+//    Thread_Start(CO2_Show_Thread, &threadInfo.status);
+//    Thread_Start(Time_Show_Thread, &threadInfo.status);
 		
 		Thread_Start(User_Print_SYS_Status_Thread, &threadInfo.status);//
-//    Thread_Start(user_watch_Thread, &threadInfo.status);//放最后，有进入低功耗模式
+    Thread_Start(user_watch_Thread, &threadInfo.status);//放最后，有进入低功耗模式
 
 		
     //run
