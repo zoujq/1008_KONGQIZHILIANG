@@ -1,0 +1,10 @@
+#ifndef __HCHO_SHOW_H__
+#define __HCHO_SHOW_H__
+
+
+
+
+void HCHO_Show(void);//º◊»©ΩÁ√Êœ‘ æ
+
+
+#endif

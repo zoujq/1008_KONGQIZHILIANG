@@ -1,0 +1,207 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (Target 1), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(USER),1,0,0
+GRPOPT 2,(SYSTEM),1,0,0
+GRPOPT 3,(HARDWARE),1,0,0
+GRPOPT 4,(CORE),0,0,0
+GRPOPT 5,(FWLib),0,0,0
+GRPOPT 6,(MALLOC),1,0,0
+GRPOPT 7,(FATFS),0,0,0
+GRPOPT 8,(USMART),0,0,0
+GRPOPT 9,(GUI),0,0,0
+GRPOPT 10,(TEXT),0,0,0
+GRPOPT 11,(PICTURE),0,0,0
+GRPOPT 12,(UCOSII-CORE),0,0,0
+GRPOPT 13,(UCOSII-PORT),0,0,0
+GRPOPT 14,(UCOSII-CONFIG),0,0,0
+GRPOPT 15,(T9INPUT),0,0,0
+GRPOPT 16,(ATKNCR),0,0,0
+GRPOPT 17,(NES),0,0,0
+GRPOPT 18,(APP),0,0,0
+GRPOPT 19,(3D),0,0,0
+GRPOPT 20,(USB-LIB),0,0,0
+GRPOPT 21,(USB-CFG),0,0,0
+
+OPTFFF 1,1,1,452984833,0,1,22,0,<.\test.c><test.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,132,0,0,0,174,0,0,0,1,6,0,0,118,2,0,0 }
+OPTFFF 1,2,1,0,0,0,0,0,<.\system_stm32f10x.c><system_stm32f10x.c> 
+OPTFFF 2,3,1,0,0,40,40,0,<..\SYSTEM\delay\delay.c><delay.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,238,5,0,0,35,1,0,0 }
+OPTFFF 2,4,1,0,0,0,0,0,<..\SYSTEM\sys\sys.c><sys.c> 
+OPTFFF 2,5,1,0,0,25,25,0,<..\SYSTEM\usart\usart.c><usart.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,4,6,0,0,64,1,0,0 }
+OPTFFF 3,6,1,0,0,0,0,0,<..\HARDWARE\LED\led.c><led.c> 
+OPTFFF 3,7,1,0,0,0,0,0,<..\HARDWARE\KEY\key.c><key.c> 
+OPTFFF 3,8,1,0,0,0,0,0,<..\HARDWARE\EXTI\exti.c><exti.c> 
+OPTFFF 3,9,1,0,0,0,0,0,<..\HARDWARE\WDG\wdg.c><wdg.c> 
+OPTFFF 3,10,1,0,0,0,0,0,<..\HARDWARE\TIMER\timer.c><timer.c> 
+OPTFFF 3,11,1,0,0,0,0,0,<..\HARDWARE\LCD\ILI93xx.c><ILI93xx.c> 
+OPTFFF 3,12,1,0,0,0,0,0,<..\HARDWARE\TOUCH\touch.c><touch.c> 
+OPTFFF 3,13,1,0,0,0,0,0,<..\HARDWARE\24CXX\24cxx.c><24cxx.c> 
+OPTFFF 3,14,1,0,0,0,0,0,<..\HARDWARE\FLASH\flash.c><flash.c> 
+OPTFFF 3,15,1,0,0,0,0,0,<..\HARDWARE\24CXX\myiic.c><myiic.c> 
+OPTFFF 3,16,1,0,0,0,0,0,<..\HARDWARE\SD\MMC_SD.C><MMC_SD.C> 
+OPTFFF 3,17,1,419430400,0,104,111,0,<..\HARDWARE\SPI\spi.c><spi.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,48,6,0,0,122,1,0,0 }
+OPTFFF 3,18,1,0,0,0,0,0,<..\HARDWARE\SRAM\sram.c><sram.c> 
+OPTFFF 3,19,1,0,0,0,0,0,<..\HARDWARE\VS10XX\VS10XX.c><VS10XX.c> 
+OPTFFF 3,20,1,0,0,0,0,0,<..\HARDWARE\AUDIOSEL\audiosel.c><audiosel.c> 
+OPTFFF 3,21,1,0,0,0,0,0,<..\HARDWARE\DMA\dma.c><dma.c> 
+OPTFFF 3,22,1,0,0,0,0,0,<..\HARDWARE\SRAMLCD\sramlcd.c><sramlcd.c> 
+OPTFFF 3,23,1,0,0,0,0,0,<..\HARDWARE\JOYPAD\joypad.c><joypad.c> 
+OPTFFF 3,24,1,0,0,0,0,0,<..\HARDWARE\RDA5820\rda5820.c><rda5820.c> 
+OPTFFF 3,25,1,0,0,0,0,0,<..\HARDWARE\RTC\rtc.c><rtc.c> 
+OPTFFF 3,26,1,0,0,0,0,0,<..\HARDWARE\DS18B20\ds18b20.c><ds18b20.c> 
+OPTFFF 3,27,1,0,0,0,0,0,<..\HARDWARE\ADC\adc.c><adc.c> 
+OPTFFF 3,28,1,0,0,0,0,0,<..\HARDWARE\BEEP\beep.c><beep.c> 
+OPTFFF 3,29,1,0,0,0,0,0,<..\HARDWARE\ADXL345\adxl345.c><adxl345.c> 
+OPTFFF 3,30,1,0,0,0,0,0,<..\HARDWARE\OV7670\ov7670.c><ov7670.c> 
+OPTFFF 3,31,1,0,0,0,0,0,<..\HARDWARE\OV7670\sccb.c><sccb.c> 
+OPTFFF 3,32,1,0,0,0,0,0,<..\HARDWARE\NRF24L01\24l01.c><24l01.c> 
+OPTFFF 3,33,1,0,0,0,0,0,<..\HARDWARE\TPAD\tpad.c><tpad.c> 
+OPTFFF 3,34,1,0,0,0,0,0,<..\HARDWARE\REMOTE\remote.c><remote.c> 
+OPTFFF 4,35,1,0,0,0,0,0,<..\CORE\core_cm3.c><core_cm3.c> 
+OPTFFF 4,36,2,0,0,0,0,0,<..\CORE\startup_stm32f10x_hd.s><startup_stm32f10x_hd.s> 
+OPTFFF 5,37,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\misc.c><misc.c> 
+OPTFFF 5,38,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_adc.c><stm32f10x_adc.c> 
+OPTFFF 5,39,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_bkp.c><stm32f10x_bkp.c> 
+OPTFFF 5,40,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_can.c><stm32f10x_can.c> 
+OPTFFF 5,41,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_cec.c><stm32f10x_cec.c> 
+OPTFFF 5,42,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_crc.c><stm32f10x_crc.c> 
+OPTFFF 5,43,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_dac.c><stm32f10x_dac.c> 
+OPTFFF 5,44,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_dbgmcu.c><stm32f10x_dbgmcu.c> 
+OPTFFF 5,45,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_dma.c><stm32f10x_dma.c> 
+OPTFFF 5,46,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_exti.c><stm32f10x_exti.c> 
+OPTFFF 5,47,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_flash.c><stm32f10x_flash.c> 
+OPTFFF 5,48,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_fsmc.c><stm32f10x_fsmc.c> 
+OPTFFF 5,49,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_gpio.c><stm32f10x_gpio.c> 
+OPTFFF 5,50,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_i2c.c><stm32f10x_i2c.c> 
+OPTFFF 5,51,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_iwdg.c><stm32f10x_iwdg.c> 
+OPTFFF 5,52,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_pwr.c><stm32f10x_pwr.c> 
+OPTFFF 5,53,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_rcc.c><stm32f10x_rcc.c> 
+OPTFFF 5,54,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_rtc.c><stm32f10x_rtc.c> 
+OPTFFF 5,55,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_sdio.c><stm32f10x_sdio.c> 
+OPTFFF 5,56,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_spi.c><stm32f10x_spi.c> 
+OPTFFF 5,57,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_tim.c><stm32f10x_tim.c> 
+OPTFFF 5,58,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_usart.c><stm32f10x_usart.c> 
+OPTFFF 5,59,1,0,0,0,0,0,<..\STM32F10x_FWLib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c> 
+OPTFFF 6,60,1,1,0,7,7,0,<..\MALLOC\malloc.c><malloc.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,154,0,0,0,203,0,0,0,27,6,0,0,148,2,0,0 }
+OPTFFF 7,61,1,0,0,0,0,0,<..\FATFS\exfuns\exfuns.c><exfuns.c> 
+OPTFFF 7,62,1,0,0,0,0,0,<..\FATFS\exfuns\mycc936.c><mycc936.c> 
+OPTFFF 7,63,1,0,0,0,0,0,<..\FATFS\src\diskio.c><diskio.c> 
+OPTFFF 7,64,1,0,0,0,0,0,<..\FATFS\src\ff.c><ff.c> 
+OPTFFF 7,65,1,0,0,0,0,0,<..\FATFS\exfuns\fattester.c><fattester.c> 
+OPTFFF 8,66,1,0,0,0,0,0,<..\USMART\usmart.c><usmart.c> 
+OPTFFF 8,67,1,0,0,0,0,0,<..\USMART\usmart_config.c><usmart_config.c> 
+OPTFFF 8,68,1,0,0,0,0,0,<..\USMART\usmart_str.c><usmart_str.c> 
+OPTFFF 8,69,5,0,0,0,0,0,<..\USMART\readme.txt><readme.txt> 
+OPTFFF 9,70,1,0,0,1,1,0,<..\GUI\gui.c><gui.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,70,6,0,0,151,1,0,0 }
+OPTFFF 9,71,1,0,0,1,1,0,<..\GUI\button.c><button.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,238,5,0,0,35,1,0,0 }
+OPTFFF 9,72,1,0,0,1,1,0,<..\GUI\progressbar.c><progressbar.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,129,5,0,0,201,1,0,0 }
+OPTFFF 9,73,1,0,0,1,1,0,<..\GUI\scrollbar.c><scrollbar.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,151,5,0,0,230,1,0,0 }
+OPTFFF 9,74,1,0,0,1,1,0,<..\GUI\listbox.c><listbox.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,173,5,0,0,3,2,0,0 }
+OPTFFF 9,75,1,150994944,0,415,425,0,<..\GUI\filelistbox.c><filelistbox.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,48,6,0,0,122,1,0,0 }
+OPTFFF 9,76,1,0,0,0,0,0,<..\GUI\edit.c><edit.c> 
+OPTFFF 9,77,1,0,0,0,0,0,<..\GUI\memo.c><memo.c> 
+OPTFFF 9,78,1,0,0,0,0,0,<..\GUI\window.c><window.c> 
+OPTFFF 10,79,1,0,0,0,0,0,<..\TEXT\fontupd.c><fontupd.c> 
+OPTFFF 10,80,1,0,0,0,0,0,<..\TEXT\text.c><text.c> 
+OPTFFF 11,81,1,0,0,0,0,0,<..\PICTURE\bmp.c><bmp.c> 
+OPTFFF 11,82,1,0,0,0,0,0,<..\PICTURE\jpeg.c><jpeg.c> 
+OPTFFF 11,83,1,0,0,0,0,0,<..\PICTURE\gif.c><gif.c> 
+OPTFFF 11,84,1,0,0,0,0,0,<..\PICTURE\piclib.c><piclib.c> 
+OPTFFF 12,85,1,0,0,0,0,0,<..\UCOSII\CORE\os_core.c><os_core.c> 
+OPTFFF 12,86,1,0,0,0,0,0,<..\UCOSII\CORE\os_flag.c><os_flag.c> 
+OPTFFF 12,87,1,0,0,0,0,0,<..\UCOSII\CORE\os_mbox.c><os_mbox.c> 
+OPTFFF 12,88,1,0,0,0,0,0,<..\UCOSII\CORE\os_mem.c><os_mem.c> 
+OPTFFF 12,89,1,0,0,0,0,0,<..\UCOSII\CORE\os_mutex.c><os_mutex.c> 
+OPTFFF 12,90,1,0,0,0,0,0,<..\UCOSII\CORE\os_q.c><os_q.c> 
+OPTFFF 12,91,1,0,0,0,0,0,<..\UCOSII\CORE\os_sem.c><os_sem.c> 
+OPTFFF 12,92,1,0,0,0,0,0,<..\UCOSII\CORE\os_task.c><os_task.c> 
+OPTFFF 12,93,1,0,0,0,0,0,<..\UCOSII\CORE\os_time.c><os_time.c> 
+OPTFFF 12,94,1,0,0,0,0,0,<..\UCOSII\CORE\os_tmr.c><os_tmr.c> 
+OPTFFF 13,95,1,0,0,0,0,0,<..\UCOSII\PORT\os_cpu_c.c><os_cpu_c.c> 
+OPTFFF 13,96,2,0,0,0,0,0,<..\UCOSII\PORT\os_cpu_a.asm><os_cpu_a.asm> 
+OPTFFF 13,97,5,0,0,0,0,0,<..\UCOSII\PORT\os_cpu.h><os_cpu.h> 
+OPTFFF 13,98,1,0,0,0,0,0,<..\UCOSII\PORT\os_dbg.c><os_dbg.c> 
+OPTFFF 14,99,5,0,0,0,0,0,<..\UCOSII\CONFIG\os_cfg.h><os_cfg.h> 
+OPTFFF 14,100,5,0,0,0,0,0,<.\includes.h><includes.h> 
+OPTFFF 15,101,1,0,0,0,0,0,<..\T9INPUT\t9input.c><t9input.c> 
+OPTFFF 15,102,1,0,0,0,0,0,<..\T9INPUT\pyinput.c><pyinput.c> 
+OPTFFF 16,103,1,0,0,0,0,0,<..\ATKNCR\atk_ncr.c><atk_ncr.c> 
+OPTFFF 16,104,4,0,0,0,0,0,<..\ATKNCR\ATKNCR_M_V2.0.lib><ATKNCR_M_V2.0.lib> 
+OPTFFF 17,105,1,0,0,0,0,0,<..\NES\6502.C><6502.C> 
+OPTFFF 17,106,1,0,0,0,0,0,<..\NES\nes_joypad.c><nes_joypad.c> 
+OPTFFF 17,107,1,0,0,0,0,0,<..\NES\nes_main.c><nes_main.c> 
+OPTFFF 17,108,1,0,0,0,0,0,<..\NES\PPU.c><PPU.c> 
+OPTFFF 18,109,1,0,0,1,1,0,<..\APP\spb.c><spb.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,234,5,0,0,247,0,0,0 }
+OPTFFF 18,110,1,0,0,1,1,0,<..\APP\common.c><common.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,4,6,0,0,21,1,0,0 }
+OPTFFF 18,111,1,0,0,1,1,0,<..\APP\ebook.c><ebook.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,26,6,0,0,50,1,0,0 }
+OPTFFF 18,112,1,0,0,0,0,0,<..\APP\picviewer.c><picviewer.c> 
+OPTFFF 18,113,1,0,0,0,0,0,<..\APP\mp3player.c><mp3player.c> 
+OPTFFF 18,114,1,184549376,0,43,51,0,<..\APP\nesplay.c><nesplay.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,70,6,0,0,151,1,0,0 }
+OPTFFF 18,115,1,0,0,0,0,0,<..\APP\lyric.c><lyric.c> 
+OPTFFF 18,116,1,0,0,0,0,0,<..\APP\settings.c><settings.c> 
+OPTFFF 18,117,1,0,0,0,0,0,<..\APP\calendar.c><calendar.c> 
+OPTFFF 18,118,1,0,0,0,0,0,<..\APP\usbplay.c><usbplay.c> 
+OPTFFF 18,119,1,0,0,0,0,0,<..\APP\3dplay.c><3dplay.c> 
+OPTFFF 18,120,1,0,0,0,0,0,<..\APP\exeplay.c><exeplay.c> 
+OPTFFF 18,121,1,0,0,0,0,0,<..\APP\notepad.c><notepad.c> 
+OPTFFF 18,122,1,0,0,0,0,0,<..\APP\paint.c><paint.c> 
+OPTFFF 18,123,1,0,0,0,0,0,<..\APP\radio.c><radio.c> 
+OPTFFF 18,124,1,0,0,0,0,0,<..\APP\recoder.c><recoder.c> 
+OPTFFF 18,125,1,0,0,0,0,0,<..\APP\tomcatplay.c><tomcatplay.c> 
+OPTFFF 18,126,1,0,0,0,0,0,<..\APP\camera.c><camera.c> 
+OPTFFF 18,127,1,637534208,0,128,128,0,<..\APP\wirelessplay.c><wirelessplay.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,26,6,0,0,93,1,0,0 }
+OPTFFF 18,128,1,0,0,0,0,0,<..\APP\appplay.c><appplay.c> 
+OPTFFF 18,129,1,0,0,0,0,0,<..\APP\calculator.c><calculator.c> 
+OPTFFF 19,130,1,0,0,0,0,0,<..\3D\3d.c><3d.c> 
+OPTFFF 20,131,1,0,0,0,0,0,<..\USB\LIB\usb_core.c><usb_core.c> 
+OPTFFF 20,132,1,0,0,0,0,0,<..\USB\LIB\usb_init.c><usb_init.c> 
+OPTFFF 20,133,1,0,0,0,0,0,<..\USB\LIB\usb_int.c><usb_int.c> 
+OPTFFF 20,134,1,0,0,0,0,0,<..\USB\LIB\usb_mem.c><usb_mem.c> 
+OPTFFF 20,135,1,0,0,0,0,0,<..\USB\LIB\usb_regs.c><usb_regs.c> 
+OPTFFF 21,136,1,0,0,0,0,0,<..\USB\CONFIG\hw_config.c><hw_config.c> 
+OPTFFF 21,137,1,0,0,0,0,0,<..\USB\CONFIG\mass_mal.c><mass_mal.c> 
+OPTFFF 21,138,1,0,0,0,0,0,<..\USB\CONFIG\memory.c><memory.c> 
+OPTFFF 21,139,1,0,0,0,0,0,<..\USB\CONFIG\scsi_data.c><scsi_data.c> 
+OPTFFF 21,140,1,0,0,0,0,0,<..\USB\CONFIG\stm32f10x_it.c><stm32f10x_it.c> 
+OPTFFF 21,141,1,0,0,0,0,0,<..\USB\CONFIG\usb_bot.c><usb_bot.c> 
+OPTFFF 21,142,1,0,0,0,0,0,<..\USB\CONFIG\usb_desc.c><usb_desc.c> 
+OPTFFF 21,143,1,0,0,0,0,0,<..\USB\CONFIG\usb_endp.c><usb_endp.c> 
+OPTFFF 21,144,1,0,0,0,0,0,<..\USB\CONFIG\usb_istr.c><usb_istr.c> 
+OPTFFF 21,145,1,0,0,0,0,0,<..\USB\CONFIG\usb_prop.c><usb_prop.c> 
+OPTFFF 21,146,1,0,0,0,0,0,<..\USB\CONFIG\usb_pwr.c><usb_pwr.c> 
+OPTFFF 21,147,1,0,0,0,0,0,<..\USB\CONFIG\usb_scsi.c><usb_scsi.c> 
+
+ExtF <D:\软件安装包\MDK3.80A\ARM\INC\ST\STM32F10x\stm32f10x_type.h> 48,56,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,48,6,0,0,79,1,0,0 }
+ExtF <E:\电子技术\日常开发\豪华版\写书本的整理\综合测试V2.24(ucos2.91) _V1.8硬件\GUI\gui.h> 1,3,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,4,6,0,0,64,1,0,0 }
+ExtF <E:\电子技术\日常开发\豪华版\写书本的整理\综合测试V2.24(ucos2.91) _V1.8硬件\GUI\guix.h> 1,1,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,26,6,0,0,93,1,0,0 }
+ExtF <E:\电子技术\资料改版\0221\实验56 战舰STM32开发板综合实验\MALLOC\malloc.h> 5,19,0,{ 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,195,5,0,0,32,2,0,0 }
+ExtF <E:\电子技术\资料改版\0221\实验56 战舰STM32开发板综合实验\USMART\usmart_str.h> 42,55,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,217,5,0,0,61,2,0,0 }
+
+TARGOPT 1, (Target 1)
+ ADSCLK=8000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<..\OBJ\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103ZE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103ZE)
+  OPTDBG 49150,7,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+  OPTKEY 0,(JL2CM3)(-U20090928 -O78 -S9 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(4) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TRE0 -FO15 -FD20000000 -FC800 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000)
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
