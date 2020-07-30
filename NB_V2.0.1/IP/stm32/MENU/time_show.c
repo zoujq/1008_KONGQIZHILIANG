@@ -189,7 +189,7 @@ void Time_Show(void) { //时间界面显示
 		if (CMachine.Key2_vale == 1) {	//按下
 			CMachine.Key2_vale = 0; //清零
 			if (uTime_Set_Mode == 0) {
-				CMachine.UI_Show_No = 2; //进入下一界面
+				CMachine.UI_Show_No = 8; //进入下一界面
 				uSet_Time_Out_No = 0; //超时自动退出清零
 				break;//下一页，退出
 			} else {

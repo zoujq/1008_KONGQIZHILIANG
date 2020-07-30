@@ -185,7 +185,7 @@ void system_init(void) {
 	// uart1_init(9600); 	//串口1初始化
 
 	init_system_printf();
-	// uart2_init(9600); 	//串口2初始化
+	uart2_init(9600); 	//串口2初始化
 
 	// uart3_init(9600); 	//串口3初始化
 //	uart4_init(115200); 	//串口4初始化
@@ -308,7 +308,7 @@ void start_task(void *pdata) {
 	OSTaskCreate(User_Menu_Show_Task, (void *)0, (OS_STK*)&Menu_TASK_STK[Menu_STK_SIZE - 1], Menu_TASK_PRIO);
 	OSTaskCreate(User_All_Sensor_Task, (void *)0, (OS_STK*)&SENSOR_TASK_STK[SENSOR_STK_SIZE - 1], SENSOR_TASK_PRIO);
 	OSTaskCreate(User_NBIOT_Task, (void *)0, (OS_STK*)&POWER_TASK_STK[POWER_STK_SIZE - 1], POWER_TASK_PRIO);
-	OSTaskCreate(User_SI4432_Task, (void *)0, (OS_STK*)&OTHER_TASK_STK[OTHER_STK_SIZE - 1], OTHER_TASK_PRIO);
+//	OSTaskCreate(User_SI4432_Task, (void *)0, (OS_STK*)&OTHER_TASK_STK[OTHER_STK_SIZE - 1], OTHER_TASK_PRIO);
 	OSTaskCreate(user_watch_task, (void *)0, (OS_STK*)&ACTION3D_TASK_STK[ACTION3D_STK_SIZE - 1], CLOCK_TASK_PRIO);
 
 

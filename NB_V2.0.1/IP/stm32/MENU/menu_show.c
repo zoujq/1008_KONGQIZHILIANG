@@ -178,7 +178,7 @@ void User_Public_Show(void) { //公共显示部分
 }
 
 
-
+extern void User_ID_Show(void);
 unsigned short UI_Show_No_B_Show_Task = 0xff; //
 
 void User_Menu_Show_Task(void *pdata) { //菜单图标显示任务
@@ -229,7 +229,8 @@ void User_Menu_Show_Task(void *pdata) { //菜单图标显示任务
 			break;
 		case 5:
 
-			CO2_Show();//TVOC界面显示
+			//CO2_Show();//TVOC界面显示
+		
 			break;
 		case 6:
 			HCHO_Show();//甲醛界面显示
@@ -237,6 +238,11 @@ void User_Menu_Show_Task(void *pdata) { //菜单图标显示任务
 			break;
 		case 7:
 			Time_Show();//时间界面显示
+
+			break;
+		case 8:
+			
+			User_ID_Show();//QR_CODE显示
 
 			break;
 		default:
