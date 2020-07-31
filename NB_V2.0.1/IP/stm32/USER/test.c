@@ -33,15 +33,15 @@ __align(8) static OS_STK USART_TASK_STK[USART_STK_SIZE];
 void usart_task(void *pdata);
 	*/
 
-//主任务
-//设置任务优先级
-#define MAIN_TASK_PRIO       			6
-//设置任务堆栈大小
-#define MAIN_STK_SIZE  					64
-//任务堆栈，8字节对齐
-__align(8) static OS_STK MAIN_TASK_STK[MAIN_STK_SIZE];
-//任务函数
-void main_task(void *pdata);
+////主任务
+////设置任务优先级
+//#define MAIN_TASK_PRIO       			6
+////设置任务堆栈大小
+//#define MAIN_STK_SIZE  					64
+////任务堆栈，8字节对齐
+//__align(8) static OS_STK MAIN_TASK_STK[MAIN_STK_SIZE];
+////任务函数
+//void main_task(void *pdata);
 
 /*//串口监视任务
 //设置任务优先级
@@ -300,7 +300,7 @@ void start_task(void *pdata) {
 
 
 	OS_ENTER_CRITICAL();//进入临界区(无法被中断打断)
-	OSTaskCreate(main_task, (void *)0, (OS_STK*)&MAIN_TASK_STK[MAIN_STK_SIZE - 1], MAIN_TASK_PRIO);
+	//OSTaskCreate(main_task, (void *)0, (OS_STK*)&MAIN_TASK_STK[MAIN_STK_SIZE - 1], MAIN_TASK_PRIO);
 
 	OSTaskCreate(User_Key_Scan_Task, (void *)0, (OS_STK*)&KEY_TASK_STK[KEY_STK_SIZE - 1], KEY_TASK_PRIO);
 //	OSTaskCreate(User_Uart_Control_Task,(void *)0,(OS_STK*)&Uart_TASK_STK[Uart_STK_SIZE-1],Uart_TASK_PRIO);

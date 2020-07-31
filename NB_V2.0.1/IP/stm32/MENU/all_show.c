@@ -65,12 +65,12 @@ void All_Show(void) { //所有参数界面显示
 	CMachine.pm25_show_flash = 0xff;
 
 
-	CMachine.pm25=100;
-	CMachine.hcho=123;
-	CMachine.tvoc=889;
-	CMachine.co2=900;
-	CMachine.temp=32;
-	CMachine.humidity=56;
+//	CMachine.pm25=100;
+//	CMachine.hcho=123;
+//	CMachine.tvoc=889;
+//	CMachine.co2=900;
+//	CMachine.temp=32;
+//	CMachine.humidity=56;
 
 
 

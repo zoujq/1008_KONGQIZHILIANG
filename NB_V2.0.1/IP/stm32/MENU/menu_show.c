@@ -11,12 +11,11 @@ u8 uBattery_Show = 0;
 u8 uRF_Blink_No = 0; //RF闪烁计数
 
 
-
 void User_Public_Show(void) { //公共显示部分
 
 
 
-
+//logo
 	/*
 	if(CMachine.fRF_Mode==0)
 	{
@@ -34,6 +33,9 @@ void User_Public_Show(void) { //公共显示部分
 
 	}
 	*/
+	
+		
+
 
 	if (CMachine.uLine_Work != 0) {
 		icon_show(150, 15, 79, 29, gImage_NB_033_03, 1); //显示
@@ -49,6 +51,9 @@ void User_Public_Show(void) { //公共显示部分
 	}
 
 
+	
+//show logo
+
 	if (CMachine.uSys_User_Reset == 1) {
 
 		CMachine.uSys_User_Reset_Time_LED_Blink_No++;
@@ -63,7 +68,30 @@ void User_Public_Show(void) { //公共显示部分
 		icon_show(36, 20, 60, 25, gImage_RHT_03, 1); //显示
 	}
 
+//start logo my
 
+
+LCD_ShowChar(140, 300,'W',16,0);
+LCD_ShowChar(150, 300,'W',16,0);
+LCD_ShowChar(160, 300,'W',16,0);
+LCD_ShowChar(170, 300,'.',16,0);
+LCD_ShowChar(180, 300,'H',16,0);
+LCD_ShowChar(190, 300,'U',16,0);
+LCD_ShowChar(200, 300,'O',16,0);
+LCD_ShowChar(210, 300,'T',16,0);
+LCD_ShowChar(220, 300,'I',16,0);
+LCD_ShowChar(230, 300,'A',16,0);
+LCD_ShowChar(240, 300,'N',16,0);
+LCD_ShowChar(250, 300,'T',16,0);
+LCD_ShowChar(260, 300,'E',16,0);
+LCD_ShowChar(270, 300,'C',16,0);
+LCD_ShowChar(280, 300,'H',16,0);
+LCD_ShowChar(290, 300,'.',16,0);
+LCD_ShowChar(300, 300,'C',16,0);
+LCD_ShowChar(310, 300,'O',16,0);
+LCD_ShowChar(320, 300,'M',16,0);
+	
+//end logo my	
 
 
 

@@ -20,24 +20,9 @@ void PM25_Show(void) { //PM2.5界面显示
 	icon_show(440, 160, 18, 16, gImage_tempc_03, 1); //显示
 	icon_show(440, 291, 17, 16, gImage_humyc_03, 1); //显示
 
-
-
-
-
-
-
 	LCD_DrawLine(356, 54, 356, 304);
 
-
-
-
-
-
 	icon_show(235, 263, 79, 31, gImage_ugm3b_03, 1); //显示
-
-
-
-
 
 	CMachine.uLanguage_Mode_B = 0xff;
 
