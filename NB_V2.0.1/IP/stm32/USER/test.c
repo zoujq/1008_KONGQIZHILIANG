@@ -202,7 +202,7 @@ void system_init(void) {
 
 
 	//初始化IIC接口
-//AT24CXX_Init();
+//AT24CXX_Init(); 
 
 //		SPI_Flash_Init();  		//SPI FLASH 初始化
 
