@@ -33,25 +33,25 @@ void Charge_Off_Show(void)//关机充电界面显示
 
 		if(CMachine.Battery==100)	
 		{	
-			if(uCharge_Off_Blink_No!=0)	icon_show(394, 16, 49, 26, gImage_battery_03,1);//显示					
+			if(uCharge_Off_Blink_No!=0)	icon_show_monochrome(394,16,0X30,0X1A,gImage_battery_03_z,0xffff);			
 			uCharge_Off_Blink_No=0;			
 		}else
 		{
 			if(uCharge_Off_Blink_No==2)	 
-			{
-				icon_show(394, 16, 49, 26, gImage_battery_00,1);//显示		
+			{	
+				icon_show_monochrome(394,16,0X30,0X1A,gImage_battery_00_z,0xffff);
 			}
 			if(uCharge_Off_Blink_No==20)	
 			{
-				icon_show(394, 16, 49, 26, gImage_battery_01,1);//显示				  		 		
+				icon_show_monochrome(394,16,0X30,0X1A,gImage_battery_01_z,0xffff);				
 			}
 			if(uCharge_Off_Blink_No==40)		
 			{
-				icon_show(394, 16, 49, 26, gImage_battery_02,1);//显示				  	 			 		
+				icon_show_monochrome(394,16,0X30,0X1A,gImage_battery_02_z,0xffff);
 			}
 			if(uCharge_Off_Blink_No==60)	
-			{
-				icon_show(394, 16, 49, 26, gImage_battery_03,1);//显示				  			
+			{			  
+				icon_show_monochrome(394,16,0X30,0X1A,gImage_battery_03_z,0xffff);
 			}			
 			uCharge_Off_Blink_No++;
 			if(uCharge_Off_Blink_No>80)	uCharge_Off_Blink_No=2;

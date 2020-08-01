@@ -11,8 +11,7 @@ void PM25_Show(void) { //PM2.5界面显示
 	POINT_COLOR = WHITE;
 	BACK_COLOR = BLACK;
 
-	icon_show(136, 70, 94, 33, gImage_pm25b_03, 1); //显示
-
+	icon_show_monochrome(134,70,0X58,0X1E,gImage_pm25b_03_z,0xFFFF);
 
 
 	icon_show(393, 194, 37, 51, gImage_humy_03, 1); //显示

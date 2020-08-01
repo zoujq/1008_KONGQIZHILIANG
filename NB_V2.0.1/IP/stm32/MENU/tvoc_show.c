@@ -10,8 +10,8 @@ void TVOC_Show(void) { //TVOC界面显示
 	POINT_COLOR = WHITE;
 	BACK_COLOR = BLACK;
 
-	icon_show(134, 78, 109, 31, gImage_tvocb_03, 1); //显示
-
+//	icon_show(134, 78, 109, 31, gImage_tvocb_03, 1); //显示
+	icon_show_monochrome(134,78,0X58,0X19,gImage_tvocb_03_z,0xFFFF);
 
 
 	icon_show(393, 194, 37, 51, gImage_humy_03, 1); //显示
@@ -61,7 +61,7 @@ void TVOC_Show(void) { //TVOC界面显示
 
 		if (CMachine.Key2_vale == 1) {	//IN键按下
 			CMachine.Key2_vale = 0; //清零
-			CMachine.UI_Show_No = 6; //进入下一界面
+			CMachine.UI_Show_No = 5; //进入下一界面
 			break;//下一页，退出
 		}
 		User_Public_Show();//公共显示部分
