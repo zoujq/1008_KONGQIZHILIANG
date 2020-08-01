@@ -2291,34 +2291,44 @@ void Show_NUM100_72(unsigned int x,unsigned int y, unsigned char str,unsigned ch
 	switch(str)
 	{
 		case 0:
-			icon_show(x,  y, 65, 90, gImage_00_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_00_03,front);//显示			
+			icon_show_monochrome(x,y,0X40,0X58,gImage_00_03_z,0xFFFF);
 			break;
 		case 1:
-			icon_show(x,  y, 65, 90, gImage_01_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_01_03,front);//显示		
+			icon_show_monochrome(x,y,0X40,0X58,gImage_01_03_z,0xFFFF);		
 			break;
 		case 2:
-			icon_show(x,  y, 65, 90, gImage_02_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_02_03,front);//显示		
+			icon_show_monochrome(x,y,0X40,0X58,gImage_02_03_z,0xFFFF);		
 			break;
 		case 3:
-			icon_show(x,  y, 65, 90, gImage_03_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_03_03,front);//显示	
+			icon_show_monochrome(x,y,0X40,0X58,gImage_03_03_z,0xFFFF);		
 			break;
 		case 4:
-			icon_show(x,  y, 65, 90, gImage_04_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_04_03,front);//显示		
+			icon_show_monochrome(x,y,0X40,0X58,gImage_04_03_z,0xFFFF);		
 			break;
 		case 5:
-			icon_show(x,  y, 65, 90, gImage_05_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_05_03,front);//显示		
+			icon_show_monochrome(x,y,0X40,0X58,gImage_05_03_z,0xFFFF);		
 			break;
 		case 6:
-			icon_show(x,  y, 65, 90, gImage_06_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_06_03,front);//显示	
+			icon_show_monochrome(x,y,0X40,0X58,gImage_06_03_z,0xFFFF);		
 			break;
 		case 7:
-			icon_show(x,  y, 65, 90, gImage_07_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_07_03,front);//显示	
+			icon_show_monochrome(x,y,0X40,0X58,gImage_07_03_z,0xFFFF);		
 			break;
 		case 8:
-			icon_show(x,  y, 65, 90, gImage_08_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_08_03,front);//显示			
+			icon_show_monochrome(x,y,0X40,0X58,gImage_08_03_z,0xFFFF);
 			break;
 		case 9:
-			icon_show(x,  y, 65, 90, gImage_09_03,front);//显示			
+			//icon_show(x,  y, 65, 90, gImage_09_03,front);//显示		
+			icon_show_monochrome(x,y,0X40,0X58,gImage_09_03_z,0xFFFF);		
 			break;
 		default:
 			break;		

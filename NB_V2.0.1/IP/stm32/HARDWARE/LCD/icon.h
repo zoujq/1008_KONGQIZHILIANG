@@ -1,5 +1,7 @@
 #ifndef __ICON_H
 #define __ICON_H	   
+#include "includes.h"
+#include "stdlib.h"
 
 extern const unsigned char gImage_RF4[2700]; 
 extern const unsigned char gImage_RF3[2700]; 
@@ -9,10 +11,12 @@ extern const unsigned char gImage_RHT_03[3000];
 extern const unsigned char gImage_NB_031_03[4582];
 extern const unsigned char gImage_NB_032_03[4582];
 extern const unsigned char gImage_NB_033_03[4582];
-extern const unsigned char gImage_battery_00[2548];
-extern const unsigned char gImage_battery_01[2548];
-extern const unsigned char gImage_battery_02[2548];
-extern const unsigned char gImage_battery_03[2548];
+
+extern const unsigned char gImage_battery_00_z[156];//zoujq
+extern const unsigned char gImage_battery_01_z[156];
+extern const unsigned char gImage_battery_02_z[156];
+extern const unsigned char gImage_battery_03_z[156];
+
 extern const unsigned char gImage_CO2_03[1888]; 
 extern const unsigned char gImage_CO2_03EG[1888]; 
 extern const unsigned char gImage_PM25_03[1408]; 
@@ -36,8 +40,11 @@ extern const unsigned char gImage_co2b_03[8680];
 extern const unsigned char gImage_co2b_03EG[8680];
 extern const unsigned char gImage_HCHOb_03[5376];
 extern const unsigned char gImage_HCHOb_03EG[5376];
-extern const unsigned char gImage_pm25b_03[6204]; 
-extern const unsigned char gImage_tvocb_03[6758];
+
+//extern const unsigned char gImage_pm25b_03[6204]; 
+extern const unsigned char gImage_pm25b_03_z[330];
+//extern const unsigned char gImage_tvocb_03[6758];
+extern const unsigned char gImage_tvocb_03_z[275];
 
 
 
@@ -68,16 +75,16 @@ extern const unsigned char gImage_19_03[2790];
 
 
 
-extern const unsigned char gImage_00_03[11700];
-extern const unsigned char gImage_01_03[11700];
-extern const unsigned char gImage_02_03[11700];
-extern const unsigned char gImage_03_03[11700];
-extern const unsigned char gImage_04_03[11700];
-extern const unsigned char gImage_05_03[11700];
-extern const unsigned char gImage_06_03[11700];
-extern const unsigned char gImage_07_03[11700];
-extern const unsigned char gImage_08_03[11700];
-extern const unsigned char gImage_09_03[11700];
+extern const unsigned char gImage_00_03_z[704];
+extern const unsigned char gImage_01_03_z[704];
+extern const unsigned char gImage_02_03_z[704];
+extern const unsigned char gImage_03_03_z[704];
+extern const unsigned char gImage_04_03_z[704];
+extern const unsigned char gImage_05_03_z[704];
+extern const unsigned char gImage_06_03_z[704];
+extern const unsigned char gImage_07_03_z[704];
+extern const unsigned char gImage_08_03_z[704];
+extern const unsigned char gImage_09_03_z[704];
 
 
 extern const unsigned char gImage_Week_03[2704]; 
@@ -135,10 +142,10 @@ extern const unsigned char gImage_moderatebEG_03[9240];
 extern const unsigned char gImage_poorb_03[9240];
 extern const unsigned char gImage_poorbEG_03[9240] 	;
 
-
+extern const unsigned char gImage_zhongguo_df[128] ;
 
 void icon_show(unsigned short  x, unsigned short  y, unsigned short  width, unsigned short  height, const unsigned char* pstr,unsigned char ishow);//œ‘ æ
-	
+void icon_show_monochrome(unsigned short  x, unsigned short  y, unsigned short  width, unsigned short  height, const unsigned char* pstr,u16 colors);	
 
 
 
